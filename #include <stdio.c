@@ -30,3 +30,17 @@ scoreOrdi = scoreOrdi + 1;
 }
 scoreOrdi);
 printf("Score actuel -> Vous : %d | Ordi : %d\n\n", scoreJoueur,
+    manche = manche + 1;
+}
+// Bilan de la partie
+printf("=== FIN DE LA PARTIE ===\n");
+printf("Score final -> Vous : %d | Ordi : %d\n", scoreJoueur, scoreOrdi);
+if (scoreJoueur > scoreOrdi) {
+printf("Bravo, vous avez gagné la partie !\n");
+} else if (scoreOrdi > scoreJoueur) {
+printf("L'ordinateur remporte la partie...\n");
+} else {
+printf("Match nul parfait !\n");
+}
+return 0;
+}
